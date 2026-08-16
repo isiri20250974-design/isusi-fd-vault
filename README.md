@@ -1,4 +1,4 @@
-# 🏦 ISUSI — Private FD Portfolio Manager
+# ISUSI — Private FD Portfolio Manager
 
 > **Your Money. Your Secret. Your Legacy.**
 
@@ -6,7 +6,7 @@ ISUSI is a mobile-first web app for Sri Lankan Fixed Deposit holders to privatel
 
 ---
 
-## 🎯 Problem Statement
+## Problem Statement
 
 | Problem | Impact |
 |---|---|
@@ -16,20 +16,20 @@ ISUSI is a mobile-first web app for Sri Lankan Fixed Deposit holders to privatel
 
 ---
 
-## ✨ Key Features
+## Key Features
 
-### 📊 FD Portfolio Tracker
+### FD Portfolio Tracker
 - Add FDs from any Sri Lankan bank manually
 - Auto-calculates maturity date, interest earned, and maturity amount
 - Colour-coded maturity reminders (30 / 7 / matured)
 - Works fully offline — the tracker itself needs no backend
 
-### 🔒 Private Vault
+### Private Vault
 - Every FD and legacy setting is encrypted **in your browser** with **AES-256-GCM** (Web Crypto API), key derived from your own passphrase via PBKDF2 (150,000 iterations)
 - Nothing is stored unencrypted, and nothing leaves the device — no cloud sync
 - Forget the passphrase and the vault cannot be recovered, by design
 
-### 🌿 Digital Legacy System
+### Digital Legacy System
 - Nominate one trusted beneficiary with a check-in / alert threshold (in days)
 - The **Legacy Guardian** agent decides — conservatively — whether to send a check-in or alert the beneficiary
 - Framed around Sri Lanka's Wills Ordinance and Nominee Law (see in-app Legal Framework panel)
@@ -47,7 +47,7 @@ A `triage` agent sits in front and hands off to whichever specialist a request n
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 ┌─────────────────────────────────────────────┐
@@ -74,7 +74,7 @@ A `triage` agent sits in front and hands off to whichever specialist a request n
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Layer | Technology |
 |---|---|
@@ -87,7 +87,7 @@ A `triage` agent sits in front and hands off to whichever specialist a request n
 
 ---
 
-## 🚀 Setup Instructions
+##  Setup Instructions
 
 ### Prerequisites
 - Python 3.12 – 3.13.x (Agent Kernel's supported range)
@@ -125,12 +125,12 @@ You should see:
 ============================================
 
   Agents ready:
-  ✅ isusi_fd_advisor      (fd_advisor)
-  ✅ isusi_health_scorer   (health_scorer)
-  ✅ isusi_legacy_guardian (legacy_guardian)
-  ✅ isusi_triage          (triage)
+  isusi_fd_advisor      (fd_advisor)
+  isusi_health_scorer   (health_scorer)
+  isusi_legacy_guardian (legacy_guardian)
+  isusi_triage          (triage)
 
-  🚀 Server running on http://localhost:8000
+  Server running on http://localhost:8000
 ```
 `config.yaml` pins the REST API to port 8000, matching the frontend's `AGENT_BASE_URL`.
 
@@ -175,7 +175,7 @@ Owner inactive for N days
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 ISUSI/
@@ -193,7 +193,7 @@ ISUSI/
 
 ---
 
-## 🌿 Digital Legacy — Legal Framework
+## Digital Legacy — Legal Framework
 
 - **Wills Ordinance** — FD holders retain full control over who receives their assets
 - **Nominee Law** — a nominated beneficiary receives FD info as a trustee, not as owner
@@ -220,4 +220,4 @@ MIT License — free to use and build upon. Agent Kernel itself is Apache-2.0 li
 
 ---
 
-*ISUSI — Your Money. Your Secret. Your Legacy.* 🏦🔒🌿
+*ISUSI — Your Money. Your Secret. Your Legacy.*🌿
